@@ -1,1 +1,127 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    font-size: 16px;
+    font-family: poppins;
+    text-decoration: none;
+}
+.description{
+    position: absolute;
+    left: 7rem;
+    top: 15rem;
+    width: 50%;
+    color: white;
+    height: 50rem;
+    width: 50rem;
+    padding: 5rem;
+}
+.description h1{
+    font-weight: 600;
+    font-size: 4.5rem;   
+}
+#trial{
+    position: absolute;
+    right: 10rem;
+    top: 8rem;
+    color: white;
+    font-family: poppins;
+    background-color: hsl(248, 32%, 49%);
+    width: 40%;
+    height: 5rem;
+    font-weight: 700;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 .5rem 1rem hsl(249, 10%, 26%) ;
+    border-radius: .75rem;
+}
+.not-bold{
+    font-weight: 400;
+}
+#signupsheet{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    right: 10rem;
+    top: 15rem;
+    justify-content: center;
+    padding: 4rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 1rem 2rem hsl(249, 10%, 26%);
+}
+input{
+    background-color: white;
+    font-family: poppins;
+    font-weight: 700;
+    width: 100%;
+    border: solid hsl(246, 25%, 77%) 1px;
+    border-radius: .75rem;
+    height: 4rem;
+    text-indent: 15px;
+}
+#signupsheet button{
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    font-family: poppins;
+    font-weight: 700;
+    border:none;
+    color: white;
+    height: 5rem;
+    box-sizing: border-box;
+    box-shadow: 0 .3rem .5rem gray;
+    border-radius: .75rem; 
+}
+#terms{
+    font-size: 1rem;
+    color:hsl(246, 25%, 77%);
+    font-family: poppins;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+@media screen and (max-width:375px){
+    .description{
+        position:absolute;
+        top: 1rem;
+        font-size: 1rem;
+        width: 90%;
+        left: 2rem;
+        padding: 0rem;
+        text-align: center;
+    }
+    .description h1{
+        font-size: 2.3rem;
+        padding: 2rem;
+    }
+    .description p{
+        font-size: 1.6rem;
+    }
+    #trial{
+        width: 90%;
+        height: 8rem;
+        left: 2rem;
+        top: 30rem;
+        position: relative;
+        padding: 2rem 3rem;
+    }
+    #signupsheet{
+        position: relative;
+        width: 90%;
+        left: 2rem;
+        top: 33rem;
+        padding: 2rem;
+    }
+}
